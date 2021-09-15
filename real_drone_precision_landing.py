@@ -301,7 +301,6 @@ def landing():
     global sub
     rospy.init_node('drone_node', anonymous=False)
     sub = rospy.Subscriber('/camera/color/image_raw', Image, msg_receiver)
-    rospy.spin()
 
 
 if __name__ == '__main__':
